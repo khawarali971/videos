@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--/*
+ ps-webrtc-simplewebrtc.html
+ Author: Lisa Larson-Kelley (http://learnfromlisa.com)
+ Full course: WebRTC Fundamentals - Pluralsight.com
+ WebRTC – Real-time Communication for Everyone Workshop - Fluent Conference 2014
+ Version 1.0.0
+ -
+ Example of basic multiway conferencing with SimpleWebRTC framework
+ Adapted from SimpleWebRTC documentation 
+*/-->
+
+<html>
+    <head>
+        <title>WebRTC For Everyone! - SimpleWebRTC Chatroom Demo</title>
+          <link rel="stylesheet" href="style.css">
+          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+          <script src="http://simplewebrtc.com/latest.js"></script>
+          <script src="fc-webrtc-simplewebrtc.js"></script>
+    </head>
+    <body>
+        <h2 style="font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif;">#fluentconf WebRTC Workshop Demo - Your Own Multi-party Chatroom  <span style="color:#FF0000;">[^ ALLOW! ^]</span></h2>
+        
+
+        <form id="createRoom">
+            <input id="sessionInput"/>
+            <button type="submit">Create it!</button>
+        </form>
+
+        <button id="screenShareButton"></button><br><span id="subTitle">(https required for screensharing to work)</span>
+        <div id="roomLink" style="font-size:18px; color: #F00;"></div>
+        
+        <video id="localVideo" width="180" style="margin-top:15px;"></video>
+        <div id="remotes"></div>
+        
+
+    </body>
+</html>
